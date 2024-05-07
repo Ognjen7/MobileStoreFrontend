@@ -1,0 +1,163 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  background-color: #f7f7f2;
+  padding: 0;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1.5rem;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  height: 4rem;
+}
+
+.logo > img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4e96bf;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+  color: white;
+  font-weight: 400;
+}
+
+.secondary {
+  background-color: white;
+  color: red;
+  border: 1px solid red;
+}
+
+.button.secondary:hover {
+  background-color: rgba(255, 0, 0, 0.15);
+}
+
+.button:hover {
+  background-color: #327da8;
+  transition: 0.3s;
+}
+
+.phones-container {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  gap: 1.5rem;
+}
+
+.filters {
+  position: absolute;
+  top: 0rem;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 15%;
+  padding-left: 2rem;
+}
+
+.filters > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filter-brands {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.filter-brands.true {
+  border-color: #327da8;
+  color: #327da8;
+}
+
+.price-filters {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+label {
+  font-family: "Lato";
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+input {
+  padding: 0.75rem 0.5rem;
+  border-radius: 1rem;
+  border: 1px solid #bbb;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.cart-container {
+  animation: slideInRight 0.3s ease-in-out forwards;
+  position: fixed;
+  top: 5rem;
+  right: 0;
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  width: 20%;
+  height: 100%;
+  padding: 0.5rem;
+}
+
+.cart-price {
+  padding: 1rem;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+}

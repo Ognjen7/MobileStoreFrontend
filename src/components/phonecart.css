@@ -1,0 +1,39 @@
+.phone-cart-container {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  padding: 1rem;
+}
+
+.phone-cart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.phone-cart-image {
+  width: 5rem;
+}
+
+.phone-cart-image > img {
+  width: 100%;
+}
+
+.button-round {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  color: white;
+}
+
+.phone-cart-price {
+  color: gray;
+}
